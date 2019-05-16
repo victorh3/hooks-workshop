@@ -69,8 +69,15 @@
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
-    "extends": "react-app",
+    "parser": "babel-eslint",
+    "extends": [
+      "react-app",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:prettier/recommended"
+    ],
     "plugins": [
+      "prettier",
       "react-hooks"
     ],
     "rules": {
@@ -87,7 +94,11 @@
   ],
   "devDependencies": {
     "eslint-plugin-react-hooks": "^1.6.0",
-    "prettier": "^1.16.4"
+    "prettier": "^1.16.4",
+    "eslint-config-prettier": "4.3.0",
+    "eslint-config-recommended": "4.0.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.12.4"
   },
   "jest": {
     "collectCoverageFrom": [
