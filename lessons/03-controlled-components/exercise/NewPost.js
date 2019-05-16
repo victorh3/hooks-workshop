@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react"
 import { useAppState } from "app/app-state"
 import Avatar from "app/Avatar"
@@ -20,10 +21,8 @@ export default function NewPost({ takeFocus, date, onSuccess, showAvatar }) {
           className="NewPost_input"
           placeholder="Tell us about your workout!"
         />
-        <div className="NewPost_char_count">
-          0/{MAX_MESSAGE_LENGTH}
-        </div>
-        <RecentPostsDropdown uid={auth.uid} onSelect={(message) => {}}/>
+        <div className="NewPost_char_count">0/{MAX_MESSAGE_LENGTH}</div>
+        <RecentPostsDropdown uid={auth.uid} onSelect={message => {}} />
         <div className="NewPost_buttons">
           <Minutes date={date} />
           <div>
