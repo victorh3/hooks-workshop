@@ -1,0 +1,29 @@
+// Place your settings in this file to overwrite the default settings
+{
+  // "http.proxy": "http://idcproxy.verizon.com:80",
+  "editor.wordWrap": "on",
+  // "prettier.eslintIntegration": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "files.associations": {
+    "*.html": "html"
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true
+  },
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+  ],
+  "javascript.validate.enable": false,
+  "[javascriptreact]": {
+    "editor.formatOnSave": true
+  },
+  "editor.formatOnSave": true,
+  // "prettier.disableLanguages": ["js"]
+  // "javascript.validate.enable": false
+  // "terminal.integrated.shell.osx": "/bin/zsh",
+  // "sync.gist": "a8a91ddf3274fe3c1c227c74a8b52c7d",
+  "window.zoomLevel": 0,
+}
